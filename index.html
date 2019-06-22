@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div style="height:2000px;"></div>
+    <script src="./scrollback.min.js"></script>
+    <script type="module">
+      // import scrollback from './scrollback.min.js'
+
+      scrollback.register({
+        callback: function(){console.log('both 100')},
+        position: 100,
+        direction: "both", // Optional. Default "both"
+        oneShot: false
+      })
+
+      scrollback.register({
+        callback: function(){console.log('down 300 OS 1')},
+        position: 300,
+        direction: "down", // Optional. Default "both"
+        oneShot: true
+      })
+
+      scrollback.register({
+        callback: function(){console.log('down 400')},
+        position: 400,
+        direction: "down", // Optional. Default "both"
+        oneShot: false
+      })
+
+      scrollback.register({
+        callback: function(){console.log('both 250')},
+        position: 250
+      })
+
+      scrollback.register({
+        callback: function(){console.log('up 500')},
+        position: 500,
+        direction: "up", // Optional. Default "both"
+        oneShot: false
+      })
+    </script>
+  </body>
+</html>

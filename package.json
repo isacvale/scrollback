@@ -1,0 +1,15 @@
+{
+  "name": "scrollback",
+  "version": "1.0.0",
+  "description": "Runs callbacks when user scroll up or down thresholds.",
+  "main": "scrollback.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "scroll",
+    "callback"
+  ],
+  "author": "isacvale",
+  "license": "ISC"
+}
